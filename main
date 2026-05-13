@@ -1,0 +1,7 @@
+public class MainProgram {
+    public static void main(String[] args) {
+        int num = 98875;
+        int root = DigitSummarizer.digitalRoot(num);
+        System.out.println("digital root = " + root);
+    }
+}
