@@ -1,0 +1,10 @@
+package javaPack;
+
+public class MainProgram {
+    public static void main(String[] args) {
+
+        System.out.println(DigitSummarizer.digitalRoot(78));     // 6
+        System.out.println(DigitSummarizer.digitalRoot(351));    // 9
+        System.out.println(DigitSummarizer.digitalRoot(98875));  // 1
+    }
+}
