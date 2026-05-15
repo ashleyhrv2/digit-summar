@@ -1,0 +1,23 @@
+package javaPack;
+
+public class DigitSummarizer {
+
+    public static int digitSum(int n) {
+        int sum = 0;
+        while(n > 0){
+            sum = sum + (n % 10);
+            n = n / 10;
+        }
+        return sum;
+    }
+
+    public static int digitalRoot(int n) {
+        int x = digitSum(n);
+
+        while(x >= 10){
+            x = digitSum(x);
+        }
+
+        return x;
+    }
+}
