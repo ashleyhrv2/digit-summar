@@ -2,28 +2,27 @@ package javaPack;
 
 public class DigitSummarizer 
 {
-	public static int main()
-	{
-		int sum = 0;
-		int n = 0;
-	    int one = 9;
-	    int two = 5;
-	    
-		while( n > 0);
-		{
-			sum =  one +  two;
-		}
-			 return sum;
-	}
-		
 
-	public static int digitalRoot(int sum) 
-	{
-		int x = sum;
-		while(x >= 10)
-		{
-			main();
-	    }
-		return sum;
-	}
+    public static int digitSum(int num) 
+    {
+        int sum = 0;
+        while(num > 0)
+        {
+            sum = sum + (num % 10);
+            num = num / 10;
+        }
+        return sum;
+    }
+
+    public static int digitalRoot(int num) 
+    {
+        int newnum = digitSum(num);
+
+        while(newnum >= 10)
+        {
+            newnum = digitSum(newnum);
+        }
+
+        return newnum;
+    }
 }
